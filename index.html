@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web fotos</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" href="../src/resources/favicon.png">
+</head>
+<body>
+    <div class="main_container">
+        <div class="image_container">
+        </div>
+        <div class="login_container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm" action="./src/auth.html" method="get">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" autocomplete="off" required>
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" autocomplete="off" required>
+
+                <div class="condiciones">
+                    <input type="checkbox" id="condiciones" name="condiciones">
+                    <label for="condiciones">Acepto las <a href="./src/condiciones.html">condiciones</a></label>
+
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./src/condiciones.js"></script>
+</body>
+</html>

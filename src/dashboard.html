@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="../src/resources/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="header">Galería de Fotos</div>
+            <ul class="nav_enlaces">
+                <li><a class="inicio" href="#" onclick="cargarGaleria('inicio')">INICIO</a></li>
+                <li><a href="#" onclick="cargarGaleria('categoria1')">FOTOS DE MOVIL </a></li>
+                <li><a href="#" onclick="cargarGaleria('categoria2')">FOTOS DE WEB</a></li>
+                <li class="cerrar" onclick="toggleMenu()">&times;</li>
+            </ul>
+            <div class="hamburguesa" onclick="toggleMenu()">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="galeria" id="galeria"></div>
+
+    <div class="login">
+        <h1>BIENVENIDOS</h1>
+        <a href="../index.html">¡VOLVER A INICIO DE SESION!</a>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
